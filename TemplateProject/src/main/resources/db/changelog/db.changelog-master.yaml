@@ -1,0 +1,5 @@
+databaseChangeLog:
+
+  - include:
+      file: classpath:db/release-1.0.0/001-createTemplateTable.sql
+
