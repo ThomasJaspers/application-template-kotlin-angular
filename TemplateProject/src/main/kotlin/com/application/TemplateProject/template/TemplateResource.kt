@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 @AllArgsConstructor
 class TemplateResource(
-    private final val templateRepository: TemplateRepository
+    private val templateRepository: TemplateRepository
 ) {
     @GetMapping("/template")
     fun template(): Long {
