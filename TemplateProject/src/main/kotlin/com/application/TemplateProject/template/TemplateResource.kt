@@ -10,7 +10,8 @@ class TemplateResource(
     private val templateRepository: TemplateRepository
 ) {
     @GetMapping("/template")
-    fun template(): Long {
-        return templateRepository.count();
+    fun template(): List<TemplateDto> {
+        return templateRepository.findAll()
+            .map { TemplateDto(it.id, it.name, it.description, it.createdOn, it.category) }
     }
 }

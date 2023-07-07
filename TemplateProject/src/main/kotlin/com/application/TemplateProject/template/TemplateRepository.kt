@@ -5,4 +5,7 @@ import org.springframework.stereotype.Repository
 
 @Repository
 interface TemplateRepository : JpaRepository<Template, Long> {
+
+    //fun findAll(): List<Template>
+
 }
