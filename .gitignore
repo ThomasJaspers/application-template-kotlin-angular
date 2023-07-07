@@ -26,3 +26,6 @@ replay_pid*
 # Mac OS
 .DS_Store
 
+/WebProject.iml
+node_modules/
+node/
