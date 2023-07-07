@@ -1,5 +1,5 @@
-# Compiled class file
-*.class
+# Compiled files
+target/
 
 # Log file
 *.log
@@ -22,3 +22,7 @@ replay_pid*
 
 # IntelliJ files
 .idea/**
+
+# Mac OS
+.DS_Store
+
