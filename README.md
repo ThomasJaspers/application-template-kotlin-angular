@@ -5,13 +5,15 @@ Application template using Kotlin and Angular.
 
 ### Setting up PostgreSQL Database
 
-psql postgres
-create database applicationtemplate
+Use `psql` to create the database and user initially. All schema objects (for example tables) will then be created using Liquibase on server startup. 
 
-psql -U postgres -d applicationtemplate
-create user appuser login;
-alter user appuser with password 'appuser';
-grant all on schema public TO appuser;
+`> psql postgres`  
+`# create database applicationtemplate;` 
+
+`> psql -U postgres -d applicationtemplate`  
+`# create user appuser login;`  
+`# alter user appuser with password 'appuser';`  
+`# grant all on schema public TO appuser;`  
 
 
 ## Getting Started
